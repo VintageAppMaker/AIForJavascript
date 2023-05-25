@@ -40,7 +40,6 @@ document.body.insertBefore(div3, document.body.firstChild);
 
 이 코드를 HTML 파일의 **`<script>`** 태그 내에 포함시키거나, JavaScript 파일로 저장하여 웹 페이지에서 실행할 수 있습니다. 위의 코드는 파란색으로 "1부터 10까지: "를 최상단에 출력한 뒤, 그 다음 줄에 빨간색으로 숫자 "55"를 출력하고, 마지막으로 빨간색 숫자에 100을 더한 결과를 중앙에 출력하는 기능을 구현합니다.
 
-[data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2738%27%20height=%2738%27/%3e](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2738%27%20height=%2738%27/%3e)
 
 ```jsx
 javascript에서 
