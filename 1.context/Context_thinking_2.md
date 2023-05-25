@@ -14,8 +14,7 @@ javascript에서
 
 다음은 JavaScript로 작성된 요구사항에 따른 소스 코드 예시입니다:
 
-```
-javascriptCopy code
+```javascript
 // HTML 요소 생성
 var div1 = document.createElement("div");
 var div2 = document.createElement("div");
@@ -53,8 +52,8 @@ javascript에서
 
 다음은 변경된 요구사항에 따른 JavaScript 소스 코드 예시입니다:
 
-```
-javascriptCopy code
+```javascript
+
 // HTML 요소 생성
 var div1 = document.createElement("div");
 var div2 = document.createElement("div");
