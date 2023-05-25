@@ -10,7 +10,6 @@
 HTML 파일을 만들기 위해서는 텍스트 편집기를 사용하여 새 파일을 생성하고 확장자를 ".html"로 저장하면 됩니다. HTML 파일은 기본적으로 텍스트로 구성되며, 다음과 같은 형식으로 작성됩니다:
 
 ```html
-htmlCopy code
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,7 +35,6 @@ HTML 파일을 작성한 후, 웹 브라우저에서 해당 파일을 열면 내
 아래는 간단한 형태의 1 페이지로 보여주는 회사 소개용 HTML 예시입니다. 이 예시는 제목, 로고, 소개 텍스트, 연락처 등을 포함하고 있습니다.
 
 ```html
-htmlCopy code
 <!DOCTYPE html>
 <html>
 <head>
@@ -118,7 +116,6 @@ htmlCopy code
 아래는 "로고이미지.jpg"를 "**[https://cdn.pixabay.com/photo/2016/10/09/08/32/digital-marketing-1725340_1280.jpg"로](https://cdn.pixabay.com/photo/2016/10/09/08/32/digital-marketing-1725340_1280.jpg%22%EB%A1%9C)** 바꾼 예시입니다.
 
 ```html
-htmlCopy code
 <!DOCTYPE html>
 <html>
 <head>
@@ -197,7 +194,6 @@ htmlCopy code
 아래 예시 코드에서 회사명을 "생성AI 노동자 연합"으로 변경한 버전을 제공합니다.
 
 ```html
-htmlCopy code
 <!DOCTYPE html>
 <html>
 <head>
@@ -277,7 +273,6 @@ htmlCopy code
 이미지가 가로로 가득 채워지도록 표시하려면 CSS에서 이미지에 대한 스타일을 조정해야 합니다. 아래는 이미지를 가로로 가득 채우는 CSS 스타일을 적용한 예시 코드입니다.
 
 ```html
-htmlCopy code
 <!DOCTYPE html>
 <html>
 <head>
@@ -363,7 +358,6 @@ htmlCopy code
 아래는 "회사 소개" 아래의 내용을 주어진 내용으로 수정한 예시 코드입니다.
 
 ```html
-htmlCopy code
 <!DOCTYPE html>
 <html>
 <head>
@@ -448,7 +442,6 @@ htmlCopy code
 아래는 **`<div id="content">`** 다음에 회사 연락처를 추가하고 주어진 내용으로 표시하는 예시 코드입니다.
 
 ```html
-htmlCopy code
 <!DOCTYPE html>
 <html>
 <head>
