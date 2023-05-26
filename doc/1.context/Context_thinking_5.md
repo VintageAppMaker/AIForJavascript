@@ -27,7 +27,6 @@
 
 ```
 ❓
-1. 함수 max(num1, num2) 정의
 위의 pseudocode를 javascript로 소스코드 만들어주세요
 ```
 

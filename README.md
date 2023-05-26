@@ -3,7 +3,7 @@
 
 ### 내용
 
-- Context 사고방식으로 Prompt 만들기
+1. Context 사고방식으로 Prompt 만들기
 	+ [Context형식으로 사고하기 #1](doc/1.context/Context_thinking_1.md)
 	+ [Context형식으로 사고하기 #2](doc/1.context/Context_thinking_2.md)
 	+ [Context형식으로 사고하기 #3](doc/1.context/Context_thinking_3.md)
