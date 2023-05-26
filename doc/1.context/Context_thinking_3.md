@@ -113,7 +113,6 @@ function sum(values) {
 이 함수를 사용하려면, 다음과 같이 호출하면 됩니다.
 
 ```
-javascriptCopy code
 var 입력값들 = [85, 92, 76, 60, 45, 98, 79, 68];
 var 결과 = sum(입력값들);
 
