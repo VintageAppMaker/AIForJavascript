@@ -18,7 +18,7 @@
 ### ChatGPT
 
 ```javascript
-markdownCopy code
+
 1. 함수 add(num1, num2) 정의
 2. 결과값 = num1 + num2
 3. 결과값을 리턴
