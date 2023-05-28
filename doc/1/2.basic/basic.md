@@ -1,4 +1,4 @@
-JavaScript 프로그래밍 기초
+# JavaScript 프로그래밍 기초
 
 ```
 ❓ javascript programming의 기초를 배우려면 어떤 목차가 필요한가?
