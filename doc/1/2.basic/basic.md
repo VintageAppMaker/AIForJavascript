@@ -2,8 +2,11 @@
 
 알아두기:
 
-chrome에서 javascript 디버깅 방법
+#### chrome에서 javascript 디버깅 방법
 ![자바스크립트 디버깅](chromedebug.gif)
+
+
+----
 
 ```
 ❓ javascript programming의 기초를 배우려면 어떤 목차가 필요한가?
