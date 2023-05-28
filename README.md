@@ -14,4 +14,4 @@
 	+ [Context형식으로 사고하기 #6](doc/1/1.context/Context_thinking_6.md)
 
 2. Prompt로 찾아보는 javascript의 기초 
-	+ [Context형식으로 사고하기 #1](doc/1/2.basic/basic.md)
+	+ [javascript 기초는? #1](doc/1/2.basic/basic.md)
