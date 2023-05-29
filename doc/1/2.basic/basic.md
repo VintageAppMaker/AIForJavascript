@@ -300,6 +300,8 @@ var fullName = firstName + " " + lastName; // "John Doe"
 
 JavaScript에서 사용되는 연산자는 이 외에도 많이 있습니다. 위 예제들은 주요한 연산자를 다룬 것이므로, 이를 참고하여 JavaScript에서 연산자를 사용할 수 있습니다.
 
+#### (●'◡'●) 변수설명
+![](operator.png)
 
 ```
 ❓ javascript에서 조건문을 설명해주고 예제를 보여주세요
