@@ -57,5 +57,7 @@
 
 
 > ChatGPT 프롬프트 진행화면 
-> 
-![context형사고방식.png](context.png)
+> ![context형사고방식.png](context.png)i
+
+> Bard에서 한 번에 프롬프트 요청한 호면
+> ![context형사고방식.png](context2.png)
