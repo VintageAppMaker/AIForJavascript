@@ -15,3 +15,6 @@
 
 2. Prompt로 찾아보는 javascript의 기초 
 	+ [javascript 기초는? #1](doc/1/2.basic/basic.md)
+
+2. Quiz & Prompt로 만들기 
+	+ [quiz & prompt ](doc/1/3.quiz/quiz.md)

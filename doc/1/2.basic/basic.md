@@ -216,6 +216,9 @@ console.log(person.name); // "John" 출력
 
 위 예제에서 `console.log()` 함수는 콘솔에 출력하는 함수입니다. 이를 통해 변수의 값을 확인할 수 있습니다.
 
+#### (●'◡'●) 변수설명
+![](variable.png)
+
 ```
 ❓ javascript에서 연산자 사용법을 알려주고 예제를 보여주세요
 ```
