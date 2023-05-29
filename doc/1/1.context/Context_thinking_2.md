@@ -1,6 +1,5 @@
 # Context형식으로 사고하기 #2
 
-Status: Not started
 
 ```jsx
 javascript에서 
