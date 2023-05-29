@@ -56,8 +56,10 @@
 이렇게 하면 연필로 빨간색의 숫자값에 +100을 한 결과인 155를 최하단 중앙에 표기할 수 있습니다.
 
 
-> ChatGPT 프롬프트 진행화면 
-> ![context형사고방식.png](context.png)i
+#### ChatGPT 프롬프트 진행화면
+  
+> ![context형사고방식.png](context.png)
 
-> Bard에서 한 번에 프롬프트 요청한 호면
+#### Bard에서 한 번에 프롬프트 요청한 화면
+ 
 > ![context형사고방식.png](context2.png)
