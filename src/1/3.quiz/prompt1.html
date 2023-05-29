@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <script type="text/javascript">
+    const names = [];
+    const scores = [];
+
+    // 이름과 성적을 입력받습니다.
+    function input() {
+      const name = prompt('이름을 입력하세요: ');
+      const score = +prompt('성적을 입력하세요: ');
+      if (score >= 0 && score <= 100) {
+        names.push(name);
+        scores.push(score);
+      } else {
+        alert('성적은 0~100 사이의 숫자만 입력하세요.');
+      }
+    }
+
+    // 최고점수를 이름과 함께 출력합니다.
+    function getHighestScore() {
+      const highestScore = Math.max(...scores);
+      const highestScoreName = names[scores.indexOf(highestScore)];
+      return `최고점수는 ${highestScoreName}의 ${highestScore}점입니다.`;
+    }
+
+    // 최저점수를 이름과 함께 출력합니다.
+    function getLowestScore() {
+      const lowestScore = Math.min(...scores);
+      const lowestScoreName = names[scores.indexOf(lowestScore)];
+      return `최저점수는 ${lowestScoreName}의 ${lowestScore}점입니다.`;
+    }
+
+    // 평균점수를 출력합니다.
+    function getAverageScore() {
+      const sum = scores.reduce((a, b) => a + b);
+      const averageScore = sum / scores.length;
+      return `평균점수는 ${averageScore}점입니다.`;
+    }
+
+    // 메인 함수입니다.
+    function main() {
+      while (true) {
+        input();
+        const message = getHighestScore() + '\n' + getLowestScore() + '\n' + getAverageScore();
+        alert(message);
+        const answer = prompt('계속하시겠습니까? (Y/N)');
+        if (answer === 'N') {
+          break;
+        }
+      }
+    }
+
+    main();
+    
+  </script>
+</head>
+<body>
+
+</body>
+</html>

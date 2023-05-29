@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <script type="text/javascript">
+    var randomNumber = Math.floor(Math.random() * 50) + 1;
+    var count = 10;
+
+    while (count > 0) {
+    var inputNumber = prompt("숫자를 입력하세요.");
+
+    if (inputNumber < randomNumber) {
+      alert("값이 작습니다.");
+
+    } else if (inputNumber > randomNumber) {
+      alert("값이 큽니다.");
+      
+    } else {
+      alert("정답입니다!");
+      break;
+    }
+
+    count--;
+}
+  </script>
+</head>
+<body>
+
+</body>
+</html>
