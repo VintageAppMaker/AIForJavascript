@@ -508,3 +508,9 @@ console.log(index); // 3
 ```
 
 배열은 데이터를 그룹화하고 다루기 위해 유용한 데이터 구조입니다. JavaScript에서 배열은 다양한 상황에서 사용되며, 데이터의 저장, 조작, 반복 처리 등에 활용됩니다.
+
+
+## mission
+
+1. prompt로 javascript 함수예제로 배우기 
+2. prompt로 javascript 이벤트 이해하기 
