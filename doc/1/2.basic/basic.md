@@ -223,6 +223,7 @@ console.log(person.name); // "John" 출력
 ❓ javascript에서 연산자 사용법을 알려주고 예제를 보여주세요
 ```
 
+### ChatGPT
 JavaScript에서는 다양한 종류의 연산자를 사용할 수 있습니다. 연산자는 값을 연산하거나 조건을 판단하는 데 사용됩니다. 아래는 JavaScript에서 주로 사용되는 연산자들과 예제입니다.
 
 1. 산술 연산자
