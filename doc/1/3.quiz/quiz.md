@@ -46,16 +46,15 @@ main.js는 다음과 같다.
 
 위의 prompt의 결과값을 
 
-1. 
-문제풀이에서 얻은 소스코드를 
-[jsfiddle](https://jsfiddle.net/)에 접속하여 
-html과 javascript를 복사하여 원하는 소스코드였는지 
-검증한다. 
+> TODO 1) 문제풀이에서 얻은 javascript 소스코드를 
 
-2. 
-- 자신의 PC에서 index.html을 만들고 main.js 파일을 만든다
-  + notepad 또는 기타 프로그램 사용
-  + 확장자 반드시 지킬 것
-- 같은 폴더에 넣는다. 
-- prompt에서 얻은 소스코드를 main.js에 넣고 실행하며 검증한다.
-- 
+  + [jsfiddle](https://jsfiddle.net/)에 접속 
+  + 소스코드 복사 및 실행하여 검증한다. 
+
+> TODO 2) 문제풀이에서 얻은 javascript 소스코드를 
+
+  + 자신의 PC에서 index.html을 만들고 main.js 파일을 만든다
+    * notepad 또는 기타 프로그램 사용
+    * 확장자 반드시 지킬 것
+  + 같은 폴더에 넣는다. 
+  + prompt에서 얻은 소스코드를 main.js에 넣고 실행하며 검증한다.
