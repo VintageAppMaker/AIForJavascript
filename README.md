@@ -22,13 +22,8 @@
 #### Section 2
 
 1. HTML 배우기
-	+ [Context형식으로 사고하기 #1](doc/2/1.html/Context_thinking_1.md)
-	+ [Context형식으로 사고하기 #2](doc/1/1.context/Context_thinking_2.md)
-	+ [Context형식으로 사고하기 #3](doc/1/1.context/Context_thinking_3.md)
-	+ [Context형식으로 사고하기 #4](doc/1/1.context/Context_thinking_4.md)
-	+ [Context형식으로 사고하기 #5](doc/1/1.context/Context_thinking_5.md)
-	+ [Context형식으로 사고하기 #6](doc/1/1.context/Context_thinking_6.md)
-
+	+ [HTML 배우기](doc/2/1.html/html.md)
+	
 2. javascript와 html 활용하기   
 	+ [회사소개 Page 만들기](doc/2/2.html_javascript/company_html.md)
 	+ [D3로 Graph 만들기](doc/2/2.html_javascript/d3.md)
