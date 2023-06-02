@@ -15,4 +15,8 @@
    + prompt로 만들기 :"piechart의 크기를 화면의 1/2로 만들기 " 
    + prompt로 만들기 :"타이머 시간을 1분부터 25분까지 선택하여 입력받기"  
    + prompt로 만들기 :"piechart에서 시간이 지나가면 배경이 흰색으로 변하게 수정"  
+
+
+결국은 공식사이트 참고해야 함. 
+https://www.chartjs.org/
    
