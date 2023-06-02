@@ -1,7 +1,6 @@
 	# AIForJavascript
-생성AI를 이용한 Javascript 공부
-
-### 내용
+# 생성AI를 이용한 Javascript 공부
+> 생성 AI를 이용한 정보검색, 코드생성 방법을 context 기반으로 만들기 
 
 #### Section 1
 
