@@ -1,8 +1,8 @@
 # Context형식으로 프롬프트 하기
 
-![](context_ex.png1)
+![](context_ex1.png)
 
-|제목|내용|
-|------|---|
-|![](context_ex.png1)|![](context_ex.png2)|
-|![](context_ex.png3)|![](context_ex.png2)|
+||
+|------|
+|![](context_ex2.png)|
+|![](context_ex3.png)|
