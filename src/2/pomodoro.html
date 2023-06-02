@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pomodoro Timer</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1 id="timer">01:00</h1>
+  <canvas id="timer-chart" width="200" height="200"></canvas>
+  <button onclick="startTimer()">Start</button>
+  <button onclick="stopTimer()">Stop</button>
+
+  <script>
+    let timerElement = document.getElementById("timer");
+    let timerChart = document.getElementById("timer-chart");
+    let timerInterval;
+    let minutes = 1;
+    let seconds = 0;
+
+    let chartData = {
+      labels: ["남은 시간", "경과 시간"],
+      datasets: [{
+        data: [minutes * 60 + seconds, 0],
+        backgroundColor: ["#ffcd56", "#36a2eb"],
+        borderColor: "#fff",
+        borderWidth: 2
+      }]
+    };
+
+    let timerChartInstance = new Chart(timerChart, {
+      type: "pie",
+      data: chartData,
+      options: {
+        legend: {
+          display: false
+        }
+      }
+    });
+
+    function startTimer() {
+      timerInterval = setInterval(updateTimer, 1000);
+    }
+
+    function stopTimer() {
+      clearInterval(timerInterval);
+    }
+
+    function updateTimer() {
+      if (seconds > 0) {
+        seconds--;
+      } else if (minutes > 0) {
+        minutes--;
+        seconds = 59;
+      } else {
+        clearInterval(timerInterval);
+        playSound("https://cdn.freesound.org/previews/417/417769_5121236-lq.mp3");
+        alert("뽀모도로 타이머가 종료되었습니다!");
+      }
+
+      timerElement.textContent = formatTime(minutes, seconds);
+      updateChartData(minutes * 60 + seconds, (1 * 60) - (minutes * 60 + seconds));
+    }
+
+    function formatTime(minutes, seconds) {
+      return `${padZero(minutes)}:${padZero(seconds)}`;
+    }
+
+    function padZero(number) {
+      return number.toString().padStart(2, "0");
+    }
+
+    function updateChartData(timeRemaining, timeElapsed) {
+      chartData.datasets[0].data[0] = timeRemaining;
+      chartData.datasets[0].data[1] = timeElapsed;
+      timerChartInstance.update();
+    }
+
+    function playSound(soundURL) {
+      let audio = new Audio(soundURL);
+      audio.play();
+    }
+  </script>
+</body>
+</html>
