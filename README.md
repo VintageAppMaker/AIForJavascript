@@ -27,6 +27,7 @@
 2. javascript와 html 활용하기   
 	+ [회사소개 Page 만들기](doc/2/2.html_javascript/company_html.md)
 	+ [D3로 Graph 만들기](doc/2/2.html_javascript/d3.md)
+	+ [GoogleMap 만들기](doc/2/2.html_javascript/googlemap.md)
 	
 3. 	javascript 기초 2 
 	+ [javascript 기초 로직](doc/2/3.javascript_advance/javascript_advance.md)
