@@ -47,4 +47,4 @@
 3. Quiz & Prompt로 만들기 
 	+ [shooting game ](doc/3/3.quiz/shoot.md)		
 	+ [GoogleMap 만들기](doc/3/3.quiz/googlemap.md)
-	
+	+ [GoogleMap 만들기](doc/3/3.quiz/cal.md)
