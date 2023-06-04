@@ -1,5 +1,7 @@
 # Context형식으로 프롬프트 하기
 
+![](context_easy.png)
+
 ![](context_ex1.png)
 
 ||
