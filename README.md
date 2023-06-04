@@ -55,8 +55,8 @@
 	+ [gas 배우기](doc/4/gas.md)
 	
 2. node.js 자동화 배우기
-	+ [node.js 자동화](doc/4/auto.md)
-	+ [node.js 자동화](doc/4/msofficeauto.md)
+	+ [node.js 자동화 - RPA](doc/4/auto.md)
+	+ [node.js 자동화 - MSOffice](doc/4/msofficeauto.md)
 	+ [node.js webscraping 1](doc/4/headless.md)
 	+ [node.js webscraping 2](doc/4/webscrap.md)
 	
