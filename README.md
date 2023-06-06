@@ -12,6 +12,12 @@
 	+ [Context형식으로 사고하기 #5](doc/1/1.context/Context_thinking_5.md)
 	+ [Context형식으로 사고하기 #6](doc/1/1.context/Context_thinking_6.md)
 	+ [Context형식으로 사고하기 정리](doc/1/1.context/context_explain.md)
+	
+    테스트
+	+ [Context형식으로 사고하기 테스트 #1](doc/1/1.context/other1.md)
+	+ [Context형식으로 사고하기 테스트 #2](doc/1/1.context/other2.md)
+	+ [Context형식으로 사고하기 테스트 #3](doc/1/1.context/context_writing.md)
+		
 
 2. Prompt로 찾아보는 javascript의 기초 
 	+ [javascript 기초는? #1](doc/1/2.basic/basic.md)
