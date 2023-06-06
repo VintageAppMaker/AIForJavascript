@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "나만의 캡쳐",
+  "version": "1.0",
+  "permissions": ["tabs"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "https://api.qrserver.com/"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.html"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ]
+}
