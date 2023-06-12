@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>D3.js Bar Graph Example</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <svg id="graph"></svg>
+
+  <script>
+    // 데이터셋
+    const data = [
+      { x: '서울', y: 100 },
+      { x: '부산', y: 30 },
+      { x: '대전', y: 20 },
+      { x: '인천', y: 80 },
+      { x: '춘천', y: 10 }
+    ];
+
+    // SVG 요소의 너비와 높이
+    const svgWidth = 500, svgHeight = 300;
+
+    // 그래프 요소의 너비와 높이
+    const graphWidth = 400, graphHeight = 200;
+
+    // 그래프 요소의 좌표 축과 그리기 영역 설정
+    const graphX = 50, graphY = 50;
+
+    // 색상 설정 함수
+    const getColor = (y) => {
+      if (y < 50) return 'red';
+      if (y === 100) return 'blue';
+      return 'yellow';
+    };
+
+    // x축의 스케일 설정
+    const xScale = d3.scaleBand()
+                     .domain(data.map(d => d.x))
+                     .range([0, graphWidth])
+                     .padding(0.1);
+
+    // y축의 스케일 설정
+    const yScale = d3.scaleLinear()
+                     .domain([0, d3.max(data, d => d.y)])
+                     .range([graphHeight, 0]);
+
+    // 그래프 그리기
+    d3.select("#graph")
+      .attr("width", svgWidth)
+      .attr("height", svgHeight)
+      .append("g")
+      .attr("transform", `translate(${graphX}, ${graphY})`)
+      .selectAll("rect")
+      .data(data)
+      .enter()
+      .append("rect")
+      .attr("x", d => xScale(d.x))
+      .attr("y", d => yScale(d.y))
+      .attr("width", xScale.bandwidth())
+      .attr("height", d => graphHeight - yScale(d.y))
+      .attr("fill", d => getColor(d.y));
+
+  </script>
+</body>
+</html>

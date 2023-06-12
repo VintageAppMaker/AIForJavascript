@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>D3.js Graph Example</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <svg id="graph"></svg>
+
+  <script>
+    // 데이터셋
+    const dataset = [10, 20, 30, 40, 50];
+
+    // SVG 요소의 너비와 높이
+    const svgWidth = 500, svgHeight = 300;
+
+    // 그래프 요소의 너비와 높이
+    const graphWidth = 400, graphHeight = 200;
+
+    // 그래프 요소의 좌표 축과 그리기 영역 설정
+    const graphX = 50, graphY = 50;
+
+    // x축의 스케일 설정
+    const xScale = d3.scaleLinear()
+                     .domain([0, dataset.length - 1])
+                     .range([0, graphWidth]);
+
+    // y축의 스케일 설정
+    const yScale = d3.scaleLinear()
+                     .domain([0, d3.max(dataset)])
+                     .range([graphHeight, 0]);
+
+    // 그래프 그리기
+    d3.select("#graph")
+      .attr("width", svgWidth)
+      .attr("height", svgHeight)
+      .selectAll("circle")
+      .data(dataset)
+      .enter()
+      .append("circle")
+      .attr("cx", (d, i) => graphX + xScale(i))
+      .attr("cy", d => graphY + yScale(d))
+      .attr("r", 5)
+      .attr("fill", "steelblue");
+
+  </script>
+</body>
+</html>
