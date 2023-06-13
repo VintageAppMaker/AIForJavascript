@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RESTful API 예제</title>
+</head>
+<body>
+  <h1>이름과 나이 저장하기</h1>
+  
+  <div>
+    <label for="name">이름:</label>
+    <input type="text" id="name">
+  </div>
+  
+  <div>
+    <label for="age">나이:</label>
+    <input type="number" id="age">
+  </div>
+  
+  <button id="saveBtn">저장</button>
+  <button id="retrieveBtn">불러오기</button>
+  
+  <div id="result"></div>
+  
+  <script>
+    const saveBtn = document.getElementById('saveBtn');
+    const retrieveBtn = document.getElementById('retrieveBtn');
+    const nameInput = document.getElementById('name');
+    const ageInput = document.getElementById('age');
+    const resultDiv = document.getElementById('result');
+
+    saveBtn.addEventListener('click', () => {
+      const name = nameInput.value;
+      const age = ageInput.value;
+
+      const data = {
+        name: name,
+        age: age
+      };
+
+      fetch('/data', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+      .then(response => {
+        if (response.ok) {
+          console.log('데이터 저장 완료');
+        } else {
+          console.error('데이터 저장 실패');
+        }
+      })
+      .catch(error => {
+        console.error('네트워크 오류:', error);
+      });
+    });
+
+    retrieveBtn.addEventListener('click', () => {
+      fetch('/data')
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error('데이터 불러오기 실패');
+        }
+      })
+      .then(data => {
+        let resultHTML = '<ul>';
+        data.forEach(item => {
+          resultHTML += `<li>이름: ${item.name}, 나이: ${item.age}</li>`;
+        });
+        resultHTML += '</ul>';
+        resultDiv.innerHTML = resultHTML;
+      })
+      .catch(error => {
+        console.error('네트워크 오류:', error);
+      });
+    });
+  </script>
+</body>
+</html>
