@@ -17,6 +17,9 @@
 	+ [Context형식으로 사고하기 테스트 #1](doc/1/1.context/other1.md)
 	+ [Context형식으로 사고하기 테스트 #2](doc/1/1.context/other2.md)
 	+ [Context형식으로 사고하기 테스트 #3](doc/1/1.context/context_writing.md)
+	
+	개발자들이 경험하는 현실
+	+ [일반적인 생성AI의 결과](doc/1/1.context/other3.md)
 		
 
 2. Prompt로 찾아보는 javascript의 기초 
