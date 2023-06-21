@@ -3,9 +3,8 @@ const CACHE_NAME = "pomodoro-cache-v1";
 const urlsToCache = [
   ".",
   "index.html",
-  "icon.png",
-  "splash.png",
-  "app.js",
+  "icon_512.png",
+  "icon_192.png",
   "https://cdn.jsdelivr.net/npm/chart.js"
 ];
 

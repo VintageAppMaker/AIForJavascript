@@ -2,9 +2,31 @@
 <html>
 <head>
   <title>Pomodoro Timer</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Timer">
+  
+  <!-- 홈 화면에서 표시되는 앱 아이콘을 지정 -->
+  <link rel="apple-touch-icon" href="icon_152.png">
+  
   <!-- index.html 파일의 <head> 태그에 추가 -->
   <link rel="manifest" href="manifest.json">
   <link rel="icon" type="image/png" href="icon.png">
+
+  <script>
+    // index.html 파일의 <script> 태그에 추가
+    if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function() {
+        navigator.serviceWorker.register("sw.js").then(function(registration) {
+        console.log("Service Worker registered with scope:", registration.scope);
+        }).catch(function(error) {
+        console.log("Service Worker registration failed:", error);
+        });
+    });
+    }
+  </script>
+
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -103,17 +125,6 @@
     }
   </script>
 
-  <script>
-    // index.html 파일의 <script> 태그에 추가
-    if ("serviceWorker" in navigator) {
-    window.addEventListener("load", function() {
-        navigator.serviceWorker.register("sw.js").then(function(registration) {
-        console.log("Service Worker registered with scope:", registration.scope);
-        }).catch(function(error) {
-        console.log("Service Worker registration failed:", error);
-        });
-    });
-    }
-  </script>
+
 </body>
 </html>
