@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "puppeteer": "^20.6.0",
-    "robotjs": "^0.6.0"
-  }
-}
